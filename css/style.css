@@ -2003,6 +2003,7 @@ p.add-now a {
   display: flex;
   align-items: center;
   margin: 0 -15px;
+  flex-wrap: wrap;
 }
 .breadcrumb li {
   color: var(--white-color);
@@ -5887,16 +5888,17 @@ a.view-all span {
 .price-box p {
   padding: 0;
 }
-.price-box div {
-  width: 60px;
-  display: flex;
-  justify-content: end;
-}
+
 .price-box span {
   display: none;
   width: fit-content;
 }
 @media screen and (min-width: 768px) {
+  .price-box div {
+    width: 60px;
+    display: flex;
+    justify-content: end;
+  }
   .price-box p {
     padding-left: 20px;
   }
