@@ -1441,9 +1441,10 @@ span.dropdown-flag img {
 }
 .price-box span {
   margin: 0;
+  padding: 3px 10px;
 }
 .price-box p {
-  padding-left: 33px;
+  /* padding-left: 33px; */
 }
 .detail-right-box.h-auto {
   height: auto;
@@ -5876,7 +5877,7 @@ a.view-all span {
   }
 }
 .detail-right-inner-box.inner-box--alt {
-  background: #fafbff;
+  background: white;
 }
 .detail-right-inner-box p {
   font-weight: 600;
@@ -5886,8 +5887,14 @@ a.view-all span {
 .price-box p {
   padding: 0;
 }
+.price-box div {
+  width: 60px;
+  display: flex;
+  justify-content: end;
+}
 .price-box span {
   display: none;
+  width: fit-content;
 }
 @media screen and (min-width: 768px) {
   .price-box p {
