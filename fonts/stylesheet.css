@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('IBMPlexSansArabic-Medium.eot');
+    src: url('IBMPlexSansArabic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSansArabic-Medium.woff2') format('woff2'),
+        url('IBMPlexSansArabic-Medium.woff') format('woff'),
+        url('IBMPlexSansArabic-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('IBMPlexSansArabic-Bold.eot');
+    src: url('IBMPlexSansArabic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSansArabic-Bold.woff2') format('woff2'),
+        url('IBMPlexSansArabic-Bold.woff') format('woff'),
+        url('IBMPlexSansArabic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('IBMPlexSansArabic-Regular.eot');
+    src: url('IBMPlexSansArabic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSansArabic-Regular.woff2') format('woff2'),
+        url('IBMPlexSansArabic-Regular.woff') format('woff'),
+        url('IBMPlexSansArabic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    src: url('IBMPlexSansArabic-SemiBold.eot');
+    src: url('IBMPlexSansArabic-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSansArabic-SemiBold.woff2') format('woff2'),
+        url('IBMPlexSansArabic-SemiBold.woff') format('woff'),
+        url('IBMPlexSansArabic-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,694 @@
+.header-wrap {
+	right: 0;
+	left: 0;
+}
+.location-dropdown.header-dropdown {
+	margin-right: 0;
+	margin-left: 50px;
+}
+.location-dropdown.header-dropdown a span.dropdown-flag {
+	margin-left: 0;
+	margin-right: 15px;
+}
+.banner-wrap {
+	background-position: right bottom;
+}
+.banner-info h1::after {
+	right: 0;
+	left: auto;
+}
+.banner-checkbox label {
+	padding: 9px 12px 9px 44px;
+}
+.banner-checkbox label::before {
+	left: 12px;
+	top: 50%;
+}
+.discuss-box input {
+	margin-left: 20px;
+}
+.advanced-search a {
+	padding-left: 5px;
+}
+.discuss-box .location-dropdown a {
+	padding: 6px 40px 8px 14px;
+}
+.discuss-box .location-dropdown a::after {
+	left: auto;
+	right: 14px;
+}
+.field-box select {
+	padding: 10px 14px;
+}
+.field-box input {
+	padding: 10px 14px 10px 42px;
+}
+.field-box select {
+	background-position: right 15px center;
+}
+.input-field span {
+	left: 14px;
+	right: auto;
+}
+.phone-code-list a,
+.select-code a {
+	flex-direction: row-reverse;
+}
+.input-field span.pass-icon {
+	left: auto;
+	right: 14px;
+}
+.input-field a.forgot-pass {
+	left: auto;
+	right: 0;
+}
+.input-field p {
+	right: auto;
+	left: 0;
+}
+.login-text a {
+	margin-right: 0;
+	margin-left: 12px;
+}
+.register-btns a span {
+	margin-right: 0;
+	margin-left: 8px;
+}
+.radio-btn p {
+	right: 50%;
+	left: auto;
+}
+.radio-btn label::before {
+	right: 0;
+	left: auto;
+}
+.phone-select {
+	right: 14px;
+}
+.phone-code-list {
+	left: auto;
+	right: 0;
+}
+.select-code a::after {
+	right: 5px;
+}
+.huda-img {
+	margin-left: 0;
+	margin-right: 15px;
+}
+.banner-detail-btn a.dark-btn {
+	margin-left: 15px;
+	margin-right: 0;
+}
+.available-col-box::after {
+	right: auto;
+	left: 0;
+}
+.available-img {
+	margin-left: 0;
+	margin-right: 22px;
+}
+.detail-banner-list li span {
+	margin-left: 0;
+	margin-right: 12px;
+}
+.message-box {
+	right: 30px;
+}
+.school-contact {
+	left: auto;
+	right: -53px;
+	transform: rotate(90deg);
+}
+.about h1.after-ly::after,
+h2.after-ly::after {
+	left: auto;
+	right: 0;
+}
+.header-location-list a,
+.location-list a,
+.filter-dropdown p,
+.selected a,
+.select-location a {
+	padding: 8px 40px 8px 14px;
+}
+.filter-dropdown p::after,
+.select-location a::after {
+	left: auto;
+	right: 14px;
+}
+span.dropdown-flag {
+	margin-left: 0;
+	margin-right: 8px;
+}
+.filter-dropdown p span {
+	margin-left: 0;
+	margin-right: 8px;
+}
+.tabs-list {
+	margin-right: 24px;
+	margin-left: 0;
+}
+.tabs-list li {
+	padding-left: 0;
+	padding-right: 36px;
+}
+.tabs-list li:last-child {
+	padding-right: 0;
+}
+.tabs-list a::after {
+	left: auto;
+	right: 0;
+}
+.school-card span.success-icon{
+	margin-right: 0;
+	margin-left: 8px;
+}
+.educational-consultant p {
+	margin: 0 15px 0 0;
+}
+.educational-consultant p span {
+	margin-left: 0;
+	margin-right: 13px;
+}
+.achievement-abs-img {
+	left: 0;
+}
+.school-service h2.after-ly::after,
+.parent-service h2.after-ly::after,
+.about h1.after-ly::after,
+.about-school h2.after-ly::after,
+.partner-info h2.after-ly::after,
+.teacher-portal h2.after-ly::after {
+	right: 0;
+	left: auto;
+}
+.teachers-rating {
+	left: auto;
+	right: 15px;
+}
+.teachers-rating span {
+	margin-right: 0;
+	margin-left: 4px;
+}
+.goals-img-box.img-box--alt {
+	margin: -58px 24px 0 0;
+}
+.goals-info {
+	margin-left: 0;
+	margin-right: 50px;
+}
+.science-goal-abs-img {
+	left: auto;
+	right: 50%;
+}
+.footer-info {
+	padding-left: 0;
+	padding-right: 50px;
+}
+.contact-info {
+	padding-right: 0;
+	padding-left: 12px;
+}
+.contact-form input {
+	padding: 0 10px 0 40px;
+	background-position: left 11px center;
+}
+.contact-form a.secondary-btn {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.copyright-info {
+	padding-left: 0;
+	padding-right: 30px;
+}
+.detail-box {
+	padding: 50px 67px 0 30px;
+}
+.detail-left-box {
+	margin-right: 0;
+	margin-left: 60px;
+}
+.detail-right-box {
+	margin-left: auto;
+	margin-right: 0;
+}
+.price-box {
+	padding-right: 0;
+	padding-left: 30px;
+}
+.price-box p {
+	padding-left: 0;
+	padding-right: 33px;
+}
+.register-info a {
+	left: auto;
+	right: -45px;
+}
+.rating-right-info {
+	padding-left: 0;
+	padding-right: 30px;
+}
+.rating-logos h3 span {
+	padding-right: 0;
+	padding-left: 10px;
+}
+.review-slider .owl-nav {
+	right: auto;
+	left: -468px;
+}
+.review-slider .owl-nav button.owl-next span::after {
+	left: 50%;
+	background: url('../images/arrow-left-dark-icon.svg') no-repeat center/ 24px;
+}
+.review-slider .owl-nav button.owl-next span:hover::after {
+	left: 50%;
+	background: url('../images/arrow-left-light-icon.svg') no-repeat center/ 24px;
+}
+.review-slider .owl-nav button.owl-prev span::after {
+	left: 50%;
+	background: url('../images/arrow-right-dark-icon.svg') no-repeat center/ 24px;
+}
+.review-slider .owl-nav button.owl-prev span:hover::after {
+	background: url('../images/arrow-right-light-icon.svg') no-repeat center/ 24px;
+}
+.event-wrap::after {
+	left: auto;
+	right: 0;
+}
+.event-right {
+	padding-left: 0;
+	padding-right: 30px;
+}
+.event-slider {
+	padding-right: 30px;
+	padding-left: 0;
+}
+.event-date {
+	margin-left: 0;
+	margin-right: 14px;
+}
+.event-slider .owl-nav {
+	right: auto;
+	left: -200px;
+}
+.event-slider .owl-nav button.owl-prev span::after {
+	background: url('../images/event-arrow-Left.png') no-repeat center/ 18px;
+}
+.event-slider .owl-nav button.owl-next span::after {
+	background: url('../images/event-arrow-right.png') no-repeat center/ 18px;
+}
+.faq-title::after {
+	left: auto;
+	right: 25px;
+}
+.faq-title.active::after {
+	background-position:  center right;
+}
+.question-form button {
+	margin-right: 0;
+	margin-left: auto;
+}
+.connect-box li span {
+	margin-left: 0;
+	margin-right: 11px;
+}
+.social-connects-links {
+	padding-right: 0;
+	padding-left: 10px;
+}
+.instagram a.dark-btn {
+	margin-right: 0;
+	margin-left: auto;
+}
+.breadcrumb li::after {
+	left: auto;
+	right: -7px;
+}
+.school-service-wrap .abs-img {
+	left: 0;
+}
+.school-service-box {
+	border-left: 0;
+	border-right: 1px dashed rgba(255, 255, 255, 0.2);
+	padding-left: 0;
+	padding-right: 10px;
+}
+.dashboard-list a span {
+	margin-left: 0;
+	margin-right: 10px;
+}
+.personal-img {
+	margin-left: 0;
+	margin-right: 20px;
+}
+.search-fields {
+	margin-right: 0;
+	margin-left: -12px;
+}
+.location-dropdown.search-location .select-location a {
+	padding-right: 0;
+	padding-left: 40px;
+}
+.search-fields button {
+	margin-right: 0;
+	margin-left: 12px;
+}
+.select-location span {
+	right: auto;
+	left: 10px;
+}
+.info-icon {
+	margin-left: 0;
+	margin-right: 12px;
+}
+.filter-checkbox label {
+	padding: 9px 12px 9px 44px;
+}
+.filter-checkbox label::before {
+	right: auto;
+	left: 12px;
+}
+.filters-list a span {
+	margin-left: 0;
+	margin-right: 10px;
+}
+a.view-all {
+	margin-right: 0;
+	margin-left: auto;
+}
+a.view-all span {
+	margin-right: 0;
+	margin-left: 15px;
+}
+.fees-box strong {
+	padding-right: 0;
+	padding-left: 12px;
+}
+.card-info .heart-icon {
+	right: auto;
+	left: 14px;
+}
+.result-left .tabs-list {
+	margin-left: 0;
+	margin-right: 0;
+}
+.map-location {
+	right: 50%;
+}
+.select-school a::after {
+	left: auto;
+	right: -25px;
+}
+.number-of-public p {
+	padding-left: 0;
+	padding-right: 20px;
+}
+.public-icon {
+	margin-left: 0;
+	margin-right: 12px;
+}
+.public-info p {
+	padding-right: 0;
+}
+.map-slider {
+	right: 0;
+}
+.inqirah-location {
+	left: 323px;
+	padding-left: 30px;
+	padding-right: 0;
+}
+.sifas-location {
+	right: 384px;
+	left: auto;
+	padding-left: 0;
+}
+.profile-form form button.secondary-btn {
+	margin-left: auto;
+	margin-right: 0;
+}
+.rating-wrap {
+	position: relative;
+	background: transparent;
+}
+.rating-wrap::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%) scaleX(-1);
+	background: var(--white-color) url('../images/rating-bg-layer.png') no-repeat left center/ 500px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.advertisement-box {
+	background-position: right 40px center;
+}
+.record-installment table {
+	text-align: left;
+}
+.installment-table th:first-child,
+.installment-table td:first-child {
+  	border-radius: 10px 0 0 10px;
+  	border-left: 1px solid #DBDBDB;
+  	border-right: 0;
+}
+.installment-table th:last-child,
+.installment-table td:last-child {
+  	border-radius: 0 10px 10px 0;
+  	border-left: 0;
+  	border-right: 1px solid #DBDBDB;
+}
+.inquirie-head::after {
+	right: 0;
+	left: auto;
+}
+.date-box {
+	margin-left: 0;
+	margin-right: 20px;
+}
+.location-info span {
+	margin-left: 0;
+	margin-right: 13px;
+}
+.location-info .problem-text {
+	padding-left: 50px;
+	padding-right: 0;
+}
+.inquirie-icon {
+	margin-left: 0;
+	margin-right: 12px;
+}
+.inquirie-info a.secondary-btn {
+	margin: 20px 0 0 auto;
+}
+.reset-password-form button.secondary-btn {
+  	margin: 30px 0 0 auto;
+}
+
+@media (max-width: 1199px) {
+	.available-img {
+		margin-left: 0;
+  		margin-right: 15px;
+	}
+	.teachers-rating {
+		left: auto;
+		right: 10px;
+	}
+	.goals-info {
+  		margin-left: 0;
+  		margin-right: 30px;
+	}
+	.detail .detail-box {
+		padding: 40px 60px 0 25px;
+	}
+	.rating-right-info {
+		padding-right: 0;
+	}
+	.review-slider .owl-nav {
+		right: auto;
+		left: 0;
+	}
+	.event-slider .owl-nav {
+		right: auto;
+  		left: -180px;
+	}
+	.rating-wrap::after {
+    	background-size: 450px;
+    	background-position: left bottom;
+  	}
+}
+@media (max-width: 991px) {
+	.location-dropdown.header-dropdown {
+		margin-left: 0;
+	}
+   	.header-menu {
+		right: 0;
+		left: -100%;
+	}
+	.header-menu.active {
+		left: 0;
+	}
+	.tabs-list li {
+  		padding-left: 0;
+  		padding-right: 30px;
+	}
+  	.location-list a,
+  	.filter-dropdown p,
+  	.location-dropdown a {
+  		padding-left: 14px;
+  		padding-right: 30px;
+  	}
+  	.goals-img-box.img-box--alt {
+  		margin-left: 0;
+  		margin-right: 20px;
+  	}
+  	.detail .detail-box {
+		padding: 30px 25px 0 25px;
+	}
+	.detail-left-box {
+		margin-right: 0;
+		margin-left: 40px;
+	}
+	.price-box p {
+		padding-left: 0;
+		padding-right: 25px;
+	}
+  	.event-slider .owl-nav {
+  		right: 0;
+  		left: 30px;
+  	}
+	.faq-title {
+		padding: 10px 40px 10px 20px;
+	}
+	.faq-title::after {
+		left: auto;
+		right: 20px;
+	}
+	.rating-wrap::after {
+    	background-size: 400px;
+  	}
+}
+@media (max-width: 767px) {
+	.banner-wrap {
+		background-position: center bottom -70px;
+	}
+	.select-code a span {
+		margin-left: 6px;
+		margin-right: 0;
+	}
+	.field-box.profile input.phone {
+		padding-right: 125px;
+		padding-left: 0;
+	}
+	.detail-banner-list li span {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	.discuss-box .location-dropdown a {
+  		padding: 8px 30px 8px 12px;
+	}
+	.tabs-list {
+  		margin-left: auto;
+  		margin-right: 0;
+  	}
+  	.goals-info {
+  		margin-left: auto;
+  		margin-right: 0;
+  	}
+  	.science-goal-abs-img {
+	    left: auto;
+	    right: 0;
+  	}
+	.footer-info {
+		padding-right: 0;
+	}
+	.copyright-info {
+		padding-right: 0;
+	}
+	.register-info a {
+		left: auto;
+	  	right: -50px;
+	}
+	.detail-box .detail-left-box {
+		margin-right: auto;
+		margin-left: 0;
+	}
+	.search-fields button.secondary-btn {
+		margin-left: 0;
+		margin-right: auto;
+	}
+	.message-box {
+		right: 15px;
+	}
+	.rating-wrap::after {
+    	background-size: 350px;
+  	}
+  	.location-info .problem-text {
+  		padding-left: 25px;
+  	}
+  	.date-box {
+  		margin-right: 15px;
+  	}
+}
+@media (max-width: 575px) {
+  	.discuss-box input {
+  		margin-left: 0;
+  	}
+  	.tabs-list li {
+		padding-left: 0;
+		padding-right: 20px;
+	}
+	.location-list a,
+	.filter-dropdown p,
+	.location-dropdown a {
+    	padding: 8px 26px 8px 10px;
+  	}
+  	.filter-dropdown p::after,
+  	.location-dropdown a::after {
+  		left: auto;
+  		right: 10px;
+  	}
+	.partner-info h2.after-ly::after {
+		left: auto;
+		right: -25px;
+	}
+	.register-info a.dark-btn {
+		left: auto;
+    	right: -50px;
+  	}
+	.price-box p {
+		padding-left: 0;
+		padding-right: 20px;
+	}
+  	.about h1.after-ly::after {
+  		left: auto;
+  		right: -25px;	
+  	}
+	.info-icon {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	.number-of-public p {
+		padding-left: 0;
+		padding-right: 10px;
+	}
+	.public-info p {
+		padding-right: 0;
+	}
+	.public-icon {
+		margin-left: 0;
+  		margin-right: 10px;
+	}
+	.rating-wrap::after {
+    	background-size: 280px;
+  	}
+  	.location-info .problem-text {
+	    padding: 10px 0 0 30px;
+  	}
+  	.date-box {
+  		margin: 0 0 20px 0;
+  	}
+}
