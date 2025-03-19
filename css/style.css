@@ -5685,7 +5685,7 @@ a.view-all span {
   gap: 20px;
   position: relative;
 }
-.gridParent >div:nth-of-type(even){
+.gridParent > div:nth-of-type(even) {
   margin-right: 5px;
 }
 .universityCard {
@@ -5821,6 +5821,38 @@ a.view-all span {
   max-height: 462px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+.fees-arrow {
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transform: rotate(180deg);
+}
+.detail-right-box {
+  height: 0px;
+  overflow: hidden;
+}
+.rotate-180{
+  transform: rotate(360deg);
+}
+@media (max-width: 768px) {
+  .fees.open .detail-right-box {
+    height: 100%;
+    overflow: visible;
+  }
+  .fees.open .fees-arrow {
+    transform: rotate(360deg); /* Rotate arrow when open */
+  }
+}
+@media (min-width: 768px) {
+  .detail-right-box {
+    height: 100%;
+    overflow: visible;
+  }
+  .fees-arrow {
+    display: none;
+  }
 }
 .gridParent .facilities {
   display: flex;

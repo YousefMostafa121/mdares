@@ -206,10 +206,12 @@
           <div>
             <p class="start">تبدأ من</p>
             <p class="text-24 fees-price">3500$</p>
+            <img src="./images/topArrow.png" alt="arrow" class="fees-arrow" />
           </div>
           <div>
             <p class="start">تبدأ من</p>
             <p class="text-24 fees-price">3500$</p>
+            <img src="./images/topArrow.png" alt="arrow" class="fees-arrow" />
           </div>
           <div class="fees-container gridParent">
             <div class="fees">
@@ -744,6 +746,24 @@
     <!-- Script Start -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script>
+      document.querySelectorAll(".fees-arrow").forEach((arrow) => {
+        arrow.addEventListener("click", () => {
+          // Toggle rotate-180 class on all arrows
+          const allArrows = document.querySelectorAll(".fees-arrow");
+          allArrows.forEach((a) => {
+            a.classList.toggle("rotate-180");
+          });
+    
+          // Get all .fees elements
+          const allFeesSections = document.querySelectorAll(".fees");
+          // Toggle the 'open' class on all .fees sections
+          allFeesSections.forEach((section) => {
+            section.classList.toggle("open");
+          });
+        });
+      });
+    </script>
     <!-- Script End -->
   </body>
 </html>
