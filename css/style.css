@@ -4956,7 +4956,7 @@ a.view-all span {
   }
   .message-box {
     right: 15px;
-    bottom: 15px;
+    bottom: 120px;
   }
   .message-box a {
     width: 60px;
@@ -6019,17 +6019,16 @@ a.view-all span {
   /* display: flex;
   justify-content: space-between; */
 }
-
 .carousel-nav {
   position: absolute;
-  top: 180px;
-  transform: translateY(-50%);
-  width: 100%;
+  top: 62px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46%;
   display: flex;
   justify-content: space-between;
   z-index: 1;
 }
-
 .carousel-btn {
   border: none;
   background-color: transparent;
@@ -6037,6 +6036,32 @@ a.view-all span {
   width: 40px;
   height: 40px;
   font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-nav {
+    top: 107px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .carousel-nav {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 105%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .carousel-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+  }
 }
 
 .carousel-btn.prev {
