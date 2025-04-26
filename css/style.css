@@ -6195,7 +6195,8 @@ a.view-all span {
 .TuitionFees .MainContentContainer .Navigation li.logout a {
   color: #b51632;
 }
-.TuitionFees .MainContentContainer form {
+.TuitionFees .MainContentContainer form,
+.TuitionFees .MainContentContainer > div {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6204,8 +6205,10 @@ a.view-all span {
   background: #fcfcfc;
   padding: 30px;
   border-radius: 10px;
+  max-width: 100%;
 }
-.TuitionFees .MainContentContainer form h1 {
+.TuitionFees .MainContentContainer form h1,
+.TuitionFees .MainContentContainer > div h1 {
   position: relative;
   font-weight: 600;
   font-size: 24px;
@@ -6799,3 +6802,56 @@ a.view-all span {
 .carousel-dot.active {
   background: #00be99;
 }
+
+/* ====================== registration requestes start ============ */
+.table-container {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.requests-header,
+.requests-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  backdrop-filter: blur(10px);
+  padding: 0 20px;
+  height: 60px;
+  width: 100%; /* Add this to make elements take full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+.requests-header p {
+  color: #1c1c1c;
+  font-size: 14px;
+  font-weight: 700;
+  text-wrap: nowrap;
+  margin-bottom: 0;
+  min-width: 120px;
+}
+.requests-body {
+  height: 56px;
+  background-color: #f6f6f6 !important;
+}
+.requests-body p {
+  text-wrap: nowrap;
+  margin-bottom: 0;
+  color: #1c1c1c;
+  font-size: 14px;
+  min-width: 120px;
+}
+.requests-body p.name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.requests-body p.stage {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ====================== registration requestes end ============ */
