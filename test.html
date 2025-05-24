@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الجدول السنوي</title>
+    <style>
+      :root {
+        --numDays: 5;
+        --numHours: 10;
+        --timeHeight: 60px;
+        --calBgColor: #fff1f8;
+        --eventBorderColor: #f2d3d8;
+        --eventColor1: #ffd6d1;
+        --eventColor2: #fafaa3;
+        --eventColor3: #e2f8ff;
+        --eventColor4: #d1ffe6;
+      }
+
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .calendar-container {
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .nav-arrow {
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0 20px;
+        user-select: none;
+      }
+
+      .calendar {
+        display: flex;
+        transition: transform 0.3s ease;
+      }
+
+      .month {
+        min-width: calc(100% / 5);
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+
+      .month-header {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .events {
+        border-radius: 5px;
+        background: var(--calBgColor);
+        padding: 10px;
+        min-height: 200px;
+      }
+
+      .event {
+        border: 1px solid var(--eventBorderColor);
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        background: white;
+      }
+
+      .title {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+
+      .corp-fi {
+        background: var(--eventColor1);
+      }
+
+      .ent-law {
+        background: var(--eventColor2);
+      }
+
+      .writing {
+        background: var(--eventColor3);
+      }
+
+      .securities {
+        background: var(--eventColor4);
+      }
+
+      @media (max-width: 768px) {
+        .month {
+          min-width: calc(100% / 3);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .month {
+          min-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calendar-container">
+      <div class="navigation">
+        <div class="nav-arrow" id="prev">&#10094;</div>
+        <div class="nav-arrow" id="next">&#10095;</div>
+      </div>
+      <div class="calendar" id="calendar"></div>
+    </div>
+
+    <script>
+      // Arabic month names
+      const arabicMonths = [
+        "يناير",
+        "فبراير",
+        "مارس",
+        "أبريل",
+        "مايو",
+        "يونيو",
+        "يوليو",
+        "أغسطس",
+        "سبتمبر",
+        "أكتوبر",
+        "نوفمبر",
+        "ديسمبر",
+      ];
+
+      // Sample events data for each month
+      const calendarData = [
+        {
+          monthNum: 1,
+          events: [
+            { title: "اجتماع أول العام", class: "corp-fi" },
+            { title: "بداية الفصل الدراسي", class: "ent-law" },
+          ],
+        },
+        {
+          monthNum: 2,
+          events: [{ title: "امتحان الرياضيات", class: "writing" }],
+        },
+        {
+          monthNum: 3,
+          events: [
+            { title: "رحلة علمية", class: "securities" },
+            { title: "يوم الرياضة", class: "corp-fi" },
+          ],
+        },
+        {
+          monthNum: 4,
+          events: [{ title: "إجازة الربيع", class: "ent-law" }],
+        },
+        {
+          monthNum: 5,
+          events: [
+            { title: "احتفال نهاية العام", class: "writing" },
+            { title: "امتحانات نهائية", class: "securities" },
+          ],
+        },
+        {
+          monthNum: 6,
+          events: [{ title: "بداية الصيف", class: "corp-fi" }],
+        },
+        {
+          monthNum: 7,
+          events: [{ title: "دورات صيفية", class: "ent-law" }],
+        },
+        {
+          monthNum: 8,
+          events: [],
+        },
+        {
+          monthNum: 9,
+          events: [{ title: "استعدادات العام الجديد", class: "writing" }],
+        },
+        {
+          monthNum: 10,
+          events: [
+            { title: "بداية الفصل الدراسي", class: "securities" },
+            { title: "اجتماع أولياء الأمور", class: "corp-fi" },
+          ],
+        },
+        {
+          monthNum: 11,
+          events: [{ title: "أنشطة ترفيهية", class: "ent-law" }],
+        },
+        {
+          monthNum: 12,
+          events: [{ title: "احتفالات نهاية السنة", class: "writing" }],
+        },
+      ];
+
+      // Generate calendar months
+      const calendar = document.getElementById("calendar");
+      let currentPosition = 0;
+      const monthsToShow = 5;
+
+      function renderCalendar() {
+        calendar.innerHTML = "";
+
+        for (let i = currentPosition; i < currentPosition + monthsToShow; i++) {
+          if (i >= arabicMonths.length) break;
+
+          const monthData = calendarData[i] || { monthNum: i + 1, events: [] };
+          const monthElement = document.createElement("div");
+          monthElement.className = "month";
+
+          monthElement.innerHTML = `
+                    <div class="month-header">${arabicMonths[i]}</div>
+                    <div class="events" id="month-${i}">
+                        ${monthData.events
+                          .map(
+                            (event) => `
+                            <div class="event ${event.class}">
+                                <p class="title">${event.title}</p>
+                            </div>
+                        `
+                          )
+                          .join("")}
+                    </div>
+                `;
+
+          calendar.appendChild(monthElement);
+        }
+      }
+
+      // Navigation handlers
+      document.getElementById("prev").addEventListener("click", () => {
+        if (currentPosition > 0) {
+          currentPosition--;
+          renderCalendar();
+        }
+      });
+
+      document.getElementById("next").addEventListener("click", () => {
+        if (currentPosition < arabicMonths.length - monthsToShow) {
+          currentPosition++;
+          renderCalendar();
+        }
+      });
+
+      // Initial render
+      renderCalendar();
+    </script>
+  </body>
+</html>
