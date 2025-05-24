@@ -6868,7 +6868,8 @@ a.view-all span {
   display: flex;
 }
 
-.carousel , .all-events {
+.carousel,
+.all-events {
   height: 100%;
   display: flex;
   align-items: center;
@@ -6934,6 +6935,7 @@ a.view-all span {
 }
 .all-events {
   display: flex;
+  align-items: start;
   gap: 10px;
   padding: 0;
 }
@@ -6950,10 +6952,9 @@ a.view-all span {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
-  justify-content: start;
 }
 .event p {
+  width: 100%;
   max-width: 110px;
 }
 .event p:first-child {
@@ -6965,5 +6966,93 @@ a.view-all span {
   font-weight: 600;
   color: #2a32d3;
 }
+.color-1 {
+  background-color: #dbe6fe;
+}
+.color-2 {
+  background-color: #e1f5e8;
+}
+.color-3 {
+  background-color: #ededed;
+}
+.color-4 {
+  background-color: #fde2db;
+}
+/* Mobile Events Styling */
+@media (max-width: 767px) {
+  .mobile-events {
+    display: block;
+    width: 100%;
+  }
 
+  .mobile-events .month-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2a32d3;
+    margin: 0 0 20px 0;
+  }
+
+  /* Hide desktop version on mobile */
+  .month-section,
+  .events.carousel {
+    display: none;
+  }
+}
+
+/* Desktop - hide mobile version */
+.months-container,
+.year {
+  display: none;
+}
+.calendar-content {
+  padding: 0;
+  border: none;
+}
+@media (min-width: 768px) {
+  .mobile-events {
+    display: none;
+  }
+  .months-container,
+  .year {
+    display: flex;
+  }
+  .calendar-content {
+    padding: 16px;
+    border: 1px solid #0000002e;
+  }
+}
+.event-mobile {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.event-mobile .event-date {
+  width: 70px;
+  height: 70px;
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.event-mobile .event-date p:first-of-type {
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+}
+.event-mobile .event-date p:last-of-type {
+  color: black;
+  font-size: 16px;
+  opacity: 0.5;
+}
+.event-mobile > p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #dbe6fe;
+  border-radius: 9px;
+  padding: 10px;
+}
 /* =============== calnder end ======== */
