@@ -7055,4 +7055,62 @@ a.view-all span {
   border-radius: 9px;
   padding: 10px;
 }
+.all-events {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.all-events::-webkit-scrollbar {
+  display: none;
+}
+
+.month-section {
+  flex: 0 0 auto;
+  width: 134px; /* Match .month width */
+}
+.calendar-tabs {
+  display: flex;
+  gap: 10px;
+  /* margin-bottom: 20px; */
+}
+.tab {
+  width: 62px;
+  height: 28px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: transparent;
+}
+.tab.active {
+  background-color: #d5e8ff;
+  color: #2a32d3;
+}
+.year-selector {
+  /* margin-bottom: 20px; */
+}
+.year-selector select {
+  padding: 8px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+}
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .heading-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 /* =============== calnder end ======== */
