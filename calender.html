@@ -113,19 +113,25 @@
       <div class="container">
         <div class="heading-container">
           <h1>التقويم المدرسي</h1>
-          <div class="year-selector">
-            <select class="year-select">
-              <option value="2025">2025 ميلادي</option>
-              <option value="2026">2026 ميلادي</option>
-              <option value="1446">1446 هجري</option>
-              <option value="1447">1447 هجري</option>
-            </select>
-          </div>
-          <div class="calendar-tabs">
-            <button class="tab active" data-calendar="miladi">ميلادي</button>
-            <button class="tab" data-calendar="hijri">هجري</button>
+          <div class="year-tabs-container">
+            <div class="year-selector">
+              <select class="year-select">
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <!-- <option value="1446">1446 هجري</option>
+                <option value="1447">1447 هجري</option> -->
+              </select>
+            </div>
+            <div class="calendar-tabs">
+              <button class="tab active" data-calendar="miladi">ميلادي</button>
+              <button class="tab" data-calendar="hijri">هجري</button>
+            </div>
           </div>
         </div>
+        <p>
+          تابع مواعيد بداية ونهاية الفصول الدراسية، الإجازات، والاختبارات في
+          تقويم مُحدّث ومنسّق حسب الأشهر.
+        </p>
         <div class="months-container">
           <button class="arrow left-arrow"><</button>
           <div class="carousel">
@@ -350,28 +356,8 @@
             يناير: [],
             فبراير: [],
             مارس: [],
-            أبريل: [
-              {
-                date: "الأربعاء<br>22 أبريل 2026",
-                dayText: "الأربعاء",
-                month: "أبريل",
-                year: "2026",
-                day: 22,
-                title: "إجازة عيد الأضحى",
-                background: "#f7f0e7",
-              },
-            ],
-            مايو: [
-              {
-                date: "الإثنين<br>04 مايو 2026",
-                dayText: "الإثنين",
-                month: "مايو",
-                year: "2026",
-                day: 4,
-                title: "بداية الدراسة بعد إجازة عيد الأضحى",
-                background: "#f7e7f0",
-              },
-            ],
+            أبريل: [],
+            مايو: [],
             يونيو: [],
             يوليو: [],
             أغسطس: [],
@@ -590,12 +576,7 @@
             const validYears =
               calendarType === "miladi" ? ["2025", "2026"] : ["1446", "1447"];
             yearSelect.innerHTML = validYears
-              .map(
-                (year) =>
-                  `<option value="${year}">${year} ${
-                    calendarType === "miladi" ? "ميلادي" : "هجري"
-                  }</option>`
-              )
+              .map((year) => `<option value="${year}">${year} </option>`)
               .join("");
             // Set default year based on calendar type
             yearSelect.value = calendarType === "miladi" ? "2025" : "1446";

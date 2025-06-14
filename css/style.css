@@ -7086,8 +7086,9 @@ a.view-all span {
   border: none;
   border-radius: 8px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   background-color: transparent;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 .tab.active {
   background-color: #d5e8ff;
@@ -7112,5 +7113,10 @@ a.view-all span {
     flex-direction: row;
     align-items: center;
   }
+}
+.year-tabs-container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 /* =============== calnder end ======== */
